@@ -24,3 +24,6 @@ Some Alembic commands that can be used:
     poetry run alembic downgrade -1
 4. Revert to a specific migrations:
     poetry run alembic downgrade <revision_name>
+
+Add seed data, Run seed.py file to add dummy data:
+1. "python seeds/seed.py" -> Run this command only if dummy data is required 
