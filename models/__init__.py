@@ -9,3 +9,4 @@ from .resume import Resume
 from .past_experience import PastExperience
 from .programming_skill import ProgrammingSkill
 from .contact import Contact
+from .contact_request import ContactRequest
