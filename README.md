@@ -11,7 +11,7 @@ Project Setup
 Run Migrations:
 1. Run command to create a migration script:
     poetry run alembic revision --autogenerate -m "profile migration"
-    (Use this command when new models are defined and we need to generate the latest scripts)
+    (Use this command when there are no migration scripts in migrations/version folder or new models are defined and we need to generate the latest scripts)
 2. Run command to apply the latest migrations on database
     poetry run alembic upgrade head
 
