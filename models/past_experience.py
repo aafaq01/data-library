@@ -1,5 +1,6 @@
 # models/past_experience.py
-from sqlalchemy import Column, Integer, String, Text
+from sqlalchemy import Column, Integer, String, Text, ForeignKey
+from sqlalchemy.orm import relationship
 from .base import Base
 
 class PastExperience(Base):
@@ -10,3 +11,7 @@ class PastExperience(Base):
     description = Column(Text)
     start_date = Column(String)
     end_date = Column(String, nullable=True)
+    profile_id = Column(Integer, ForeignKey('profiles.id'))
+
+    # Define a relationship with the Profile table
+    profile = relationship("Profile", back_populates="past_experiences")
