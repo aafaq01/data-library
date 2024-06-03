@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "data-manager-library"
-version = "0.0.2"
+version = "0.0.3"
 description = ""
 authors = ["Aafaq Rana <m.aafaq.rana@gmail.com>"]
 readme = "read_me.md"

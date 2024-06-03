@@ -14,7 +14,7 @@ class Profile(Base):
     contacts = relationship('Contact', back_populates='profile')
     past_experiences = relationship('PastExperience', back_populates='profile')
     programming_skills = relationship('ProgrammingSkill', back_populates='profile')
-    resumes = relationship('Resume', uselist=False, back_populates='profile')
+    resumes = relationship('Resume', back_populates='profile')
     soft_skills = relationship('SoftSkill', back_populates='profile')
     tech_stacks = relationship('TechStack', back_populates='profile')
     contact_requests = relationship('ContactRequest', back_populates='profile')
